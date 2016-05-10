@@ -7,8 +7,8 @@
 		<!-- 日志备份目录 -->
 		<Property name="BACKUP_HOME">{LOG_HOME}/backup</Property>
 		<Property name="STAT_NAME">stat</Property>
-		<Property name="SERVER_NAME">tx-global.log</Property>
-		<Property name="FILE_NAME">tx-log.log</Property>
+		<Property name="SERVER_NAME">bsh-global.log</Property>
+		<Property name="FILE_NAME">bsh-log.log</Property>
 	</Properties>
 	<Appenders>
 		<!-- 控制台 -->

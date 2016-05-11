@@ -1,0 +1,18 @@
+spring:
+    datasource:
+        url: jdbc:mysql://localhost:3306/bsh?useSSL=false
+        username: root
+        password: 3416763
+        driver-class-name: com.mysql.jdbc.Driver
+    jpa:
+        database: MYSQL
+        show-sql: true
+        hibernate: 
+            naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp

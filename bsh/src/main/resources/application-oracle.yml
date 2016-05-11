@@ -1,0 +1,18 @@
+spring:
+    datasource:
+        url: jdbc:oracle:thin:@localhost:1521:orcl
+        username: root
+        password: 3416763
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+    jpa:
+        database: ORACLE
+        show-sql: true
+        hibernate: 
+            naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.Oracle10gDialect
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp

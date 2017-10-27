@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Date;
 import java.util.List;
@@ -28,7 +29,17 @@ public class UserAction {
 	// 这里建议使用接口定义
 	@Autowired
 	private UserService userServiceImpl;
-	
+
+    /**
+     * 跳转到用户列表
+     * @return 列表逻辑页
+     */
+    @RequestMapping(value = "/test")
+    public ModelAndView list() {
+        ModelAndView view = new ModelAndView("user/add");
+        return view;
+    }
+
 	/**
 	 * 跳转到用户列表
 	 * @return 列表逻辑页

@@ -53,13 +53,13 @@
 		</Logger>
 		<Logger name="org.springframework.tx" level="DEBUG" additivity="true">
 		</Logger>
-		<Logger name="org.springframework.web" level="INFO" additivity="true">
+		<Logger name="org.springframework.web" level="DEBUG" additivity="true">
 		</Logger>
 		<Logger name="org.springframework.orm" level="INFO" additivity="true">
 		</Logger>
 		<Logger name="org.springframework.mvc" level="INFO" additivity="true">
 		</Logger>
-		<Logger name="org.springframework.web.servlet.mvc.method.annotation" level="WARN" additivity="true">
+		<Logger name="org.springframework.web.servlet.mvc.method.annotation" level="INFO" additivity="true">
 		</Logger>
 		<Logger name="org.mybatis.spring.mapper" level="INFO" additivity="true">
 		</Logger>

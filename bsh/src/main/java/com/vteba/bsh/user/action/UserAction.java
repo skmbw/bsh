@@ -1,8 +1,8 @@
 package com.vteba.bsh.user.action;
 
-import java.util.Date;
-import java.util.List;
-
+import com.vteba.bsh.user.model.User;
+import com.vteba.bsh.user.service.spi.UserService;
+import com.vteba.bsh.utils.ObjectId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,15 +11,14 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.vteba.bsh.user.model.User;
-import com.vteba.bsh.user.service.spi.UserService;
-import com.vteba.bsh.utils.ObjectId;
+import java.util.Date;
+import java.util.List;
 
 /**
  * 用户控制器
  * 
  * @author iyinlei@126.com
- * @date 2016年5月10日 下午12:32:17
+ * @since 2016年5月10日 下午12:32:17
  */
 @Controller
 @RequestMapping("/user")
@@ -34,7 +33,7 @@ public class UserAction {
 	 * 跳转到用户列表
 	 * @return 列表逻辑页
 	 */
-	@RequestMapping("/list")
+	@RequestMapping(value = "/list")
 	public String list(ModelMap model) {
 		try {
 			List<User> list = userServiceImpl.queryForList(null);

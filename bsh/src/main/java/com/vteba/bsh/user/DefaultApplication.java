@@ -5,13 +5,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
 import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 /**
  * 程序启动引导类
  * 
  * @author iyinlei@126.com
- * @date 2016年5月10日 下午1:04:47
+ * @since 2016年5月10日 下午1:04:47
  */
 @SpringBootApplication // 这是一个组合注解，上面有很多其他的注解，简单来讲就是启动spring boot程序
 public class DefaultApplication extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer {

@@ -1,7 +1,6 @@
 package com.vteba.bsh;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.embedded.ConfigurableEmbeddedServletContainer;
@@ -14,7 +13,6 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
  * @author iyinlei@126.com
  * @since 2016年5月10日 下午1:04:47
  */
-@EnableAutoConfiguration
 @SpringBootApplication // 这是一个组合注解，上面有很多其他的注解，简单来讲就是启动spring boot程序
 public class DefaultApplication extends SpringBootServletInitializer implements EmbeddedServletContainerCustomizer {
 
